@@ -1,9 +1,11 @@
 language: go
 go:
-  - 1.2
+ # - 1.2
   - release
   - tip
 
 matrix:
  include:
   - go: 1.2
+ exclude:
+  - go: tip
